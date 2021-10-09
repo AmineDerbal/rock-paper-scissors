@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="index.js" defer></script>
     <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,6 +9,36 @@
     <title>Rock Paper Scissor</title>
   </head>
   <body>
-    <script src="index.js"></script>
+    <header class="header"></header>
+    <div class="introduction">
+      <h1>Welcome to Rock Paper and Scissor</h1>
+      <p>The First to 5 wins is the true Winner!</p>
+    </div>
+    <div class="textScore">
+      <p>Score</p>
+      <div class="score"></div>
+      <div class="handScore"></div>
+    </div>
+
+    <div class="btns">
+      <button id="rock">
+        <img src="images/rock.svg" alt="Rock" />
+      </button>
+      <button id="paper">
+        <img src="images/paper.svg" alt="Paper" />
+      </button>
+      <button id="scissor">
+        <img src="images/scissor.svg" alt="Scissor" />
+      </button>
+    </div>
+
+    <div class="result">
+      <div class="result-text"></div>
+      <div id="restart"><button class="restart">Restart</button></div>
+    </div>
+
+    <footer class="footer">
+      <span>Copyright © The Odin Project 2021</span>
+    </footer>
   </body>
 </html>
