@@ -51,9 +51,10 @@ btns.forEach((button) => {
 
 // button restart
 restart.addEventListener("click", () => {
-  console.log("moi");
   playerWin = 0;
   computerWin = 0;
+  playerHand.style.visibility = "hidden";
+  cpuHand.style.visibility = "hidden";
   showScore();
   resultText.textContent = " ";
   roundCommentary.textContent = " ";
@@ -71,6 +72,10 @@ function showScore() {
 // check player hand with the cpu and display the result
 function playround(playerSelection) {
   let computerSelection = computerPlay();
+  if (playerWin == 0 && computerWin == 0) {
+    playerHand.style.visibility = "visible";
+    cpuHand.style.visibility = "visible";
+  }
 
   switch (playerSelection) {
     case "rock":
