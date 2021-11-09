@@ -112,10 +112,11 @@ body,html{
 
 .footer{
     
-    height: 50px;
-    line-height: 50px;
-   
-    text-align: center;
+    font-size:30px;
+   position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     bottom:0;
     width:100%;
     
@@ -132,5 +133,11 @@ body,html{
     font-size: 20px;
     
     
+}
+.rotate-icon{
+    transition: transform 0.3s ease-out;
+}
+.rotate-link:hover .rotate-icon{
+transform: rotate(360deg);
 }
 
